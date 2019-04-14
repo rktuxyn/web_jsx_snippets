@@ -1,24 +1,24 @@
 {
     "Web Jsx Response Write Tag <js= =js>":{
        "prefix":"<js=",
-       "lang": ["js"],
+       "lang": ["javascript"],
        "body":["<js=$1=js>", "$0"],
        "description":"Web Jsx Response Write Tag <js= =js>",
-       "scope":"text.html"
+       "scope":"javascript,typescript"
     },
     "Web Jsx Script Tag <js:: ::js>":{
        "prefix":"<js::",
-       "lang": ["js"],
+       "lang": ["javascript"],
        "body":[ "<js::","\t$1","::js>", "$0"],
        "description":"Web Jsx Script Tag <js:: ::js>",
-       "scope":"text.html"
+       "scope":"javascript,typescript"
     },
     "Web Jsx Master Template Placehodler tag <placeholder id=\"xy\"></placeholder>":{
         "prefix":"<placeholder",
-        "lang": ["html"],
+        "lang": ["javascript,typescript"],
         "body":["<placeholder id=\"$1\"></placeholder>", "$0"],
         "description":"Web Jsx Master Template Placehodler tag <placeholder id=\"xy\"></placeholder>",
-        "scope":"text.html"
+        "scope":"javascript,typescript"
      },
     "Web Jsx Master Template Implement tag <impl-placeholder id=\"xy\"></impl-placeholder>":{
         "prefix":"<impl-placeholder",

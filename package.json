@@ -10,16 +10,21 @@
 		"Snippets"
 	],
 	"contributes": {
-		"snippets": [
-			{
-				"language": "html",
-				"path": "./snippets/snippets.json"
-			}
-		],
+		"snippets": [{
+			"language": "html",
+			"path": "./snippets/snippets.json"
+		},{
+			"language": "javascript",
+			"path": "./snippets/javascript.json"
+		}],
 		"languages": [{
 			"id": "html",
 			"aliases": ["wjsx"],
 			"extensions": [".wjsx"]
+		},{
+			"id": "javascript",
+			"aliases": ["wjsx", "wjsxh", ".js"],
+			"extensions": [".wjsx", ".wjsxh", ".js"]
 		}]
 	},
 	"license": "MIT",
@@ -28,11 +33,10 @@
 		"email": "rajib@safeonline.world",
 		"url": "https://web_jsx.safeonline.wrold"
 	},
-	"contributors": [],
 	"icon": "images/icon.png",
 	"preview": true,
 	"publisher": "4v32dv77an4njhkn5xwpffhcmdadgojrez642etjyhhuphnyutra",
-	"files": ["/snippets/snippets.json","/src/web_jsx.d.ts", "/images/icon.png", "/images/preview.gif"],
+	"files": ["/snippets/snippets.json","/snippets/javascript.json","/@types/web_jsx.d.ts", "/images/icon.png", "/images/preview.gif"],
 	"bugs": {
 			"url": "https://github.com/RKTUXYN/web_jsx_snippets/issues"
 	},

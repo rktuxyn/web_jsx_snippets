@@ -1,0 +1,58 @@
+{
+    "Web Jsx Response Write":{
+       "prefix":"write",
+       "body":["context.response.write($1);", "$0"],
+       "description":"Web Jsx write into body stream",
+       "scope":"javascript"
+    },
+    "Web Jsx request.read_payload":{
+       "prefix":"read",
+       "body":[ "context.request.read_payload((buff, count) => {",
+        "\t$1",
+        "});", "$0"],
+       "description":"Web Jsx Read from current HTTP Payload stream chunk",
+       "scope":"javascript"
+    },
+    "Web Jsx response.header":{
+        "prefix":"header",
+        "body":[ "context.response.header('$1', '$2');", "$0"],
+        "description":"Web Jsx Set HTTP Response header collection",
+        "scope":"javascript"
+     },
+     "Web Jsx response.write_from_file":{
+        "prefix":"write_from_file",
+        "body":[ "context.response.write_from_file('$1');", "$0"],
+        "description":"Web Jsx Write HTTP Response body stream from server map file",
+        "scope":"javascript"
+     },
+     "Web Jsx response.cookie":{
+        "prefix":"cookie",
+        "body":[ "context.response.cookie('$1');", "$0"],
+        "description":"Web Jsx Write HTTP Response body stream from server map file",
+        "scope":"javascript"
+     },
+     "Web Jsx response.redirect":{
+        "prefix":"redirect",
+        "body":[ "context.response.redirect('$1', '$2');", "$0"],
+        "description":"Web Jsx Set HTTP status code 303 See Other",
+        "scope":"javascript"
+     },
+     "Web Jsx as_gzip":{
+        "prefix":"as_gzip",
+        "body":[ "context.response.as_gzip();", "$0"],
+        "description":"Web Jsx Set HTTP status code 303 See Other",
+        "scope":"javascript"
+     },
+     "Web Jsx npgsql.execute_io":{
+        "prefix":"execute_io",
+        "body":[ "npgsql.execute_io(${1:cons_str}, ${2:sp_str}, ${3:form_data_str});", "$0"],
+        "description":"Web Jsx Executes the stored procedure @param sp_str and returns the first row as json string",
+        "scope":"javascript"
+     },
+     "Web Jsx npgsql.data_reader":{
+        "prefix":"data_reader",
+        "body":[ "npgsql.data_reader(${1:cons_str}, ${2:query_str}, (index, row) => {","\t$3", "});", "$0"],
+        "description":"Web Jsx Executes the query @param query_str and give each row in @param func",
+        "scope":"javascript"
+     }
+ }
