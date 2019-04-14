@@ -1,0 +1,44 @@
+{
+	"name": "webjsx",
+	"displayName": "Web Jsx",
+	"description": "web_jsx template engine",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		],
+		"languages": [{
+			"id": "html",
+			"aliases": ["wjsx"],
+			"extensions": [".wjsx"]
+		}]
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Safe Online World",
+		"email": "rajib@safeonline.world",
+		"url": "https://web_jsx.safeonline.wrold"
+	},
+	"contributors": [],
+	"icon": "/web_jsx_snippets/images/icon.png",
+	"preview": true,
+	"publisher": "4v32dv77an4njhkn5xwpffhcmdadgojrez642etjyhhuphnyutra",
+	"files": ["/snippets/snippets.json","/src/web_jsx.d.ts", "/images/icon.png", "/images/preview.gif"],
+	"bugs": {
+			"url": "https://github.com/RKTUXYN/web_jsx/vscode/extension/web_jsx_snippets/issues"
+	},
+	"repository": {
+			"type": "git",
+			"url": "https://github.com/RKTUXYN/web_jsx/vscode/extension/web_jsx_snippets.git"
+	},
+	"homepage": "https://github.com/RKTUXYN/web_jsx/vscode/extension/web_jsx_snippets/blob/master/README.md"
+}

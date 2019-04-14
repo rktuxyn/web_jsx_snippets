@@ -1,0 +1,37 @@
+{
+    "Web Jsx Response Write Tag <js= =js>":{
+       "prefix":"<js=",
+       "lang": ["js"],
+       "body":["<js=$1=js>", "$0"],
+       "description":"Web Jsx Response Write Tag <js= =js>",
+       "scope":"text.html"
+    },
+    "Web Jsx Script Tag <js:: ::js>":{
+       "prefix":"<js::",
+       "lang": ["js"],
+       "body":[ "<js::","\t$1","::js>", "$0"],
+       "description":"Web Jsx Script Tag <js:: ::js>",
+       "scope":"text.html"
+    },
+    "Web Jsx Master Template Placehodler tag <placeholder id=\"xy\"></placeholder>":{
+        "prefix":"<placeholder",
+        "lang": ["html"],
+        "body":["<placeholder id=\"$1\"></placeholder>", "$0"],
+        "description":"Web Jsx Master Template Placehodler tag <placeholder id=\"xy\"></placeholder>",
+        "scope":"text.html"
+     },
+    "Web Jsx Master Template Implement tag <impl-placeholder id=\"xy\"></impl-placeholder>":{
+        "prefix":"<impl-placeholder",
+        "lang": ["html"],
+        "body":["<impl-placeholder id=\"$1\">", "\t$2","</impl-placeholder>", "$0"],
+        "description":"Web Jsx Master Template Implement tag <impl-placeholder id=\"xy\"></impl-placeholder>",
+        "scope":"text.html"
+     },
+    "Web Jsx Extend Master Template":{
+       "prefix":"#extend",
+       "lang": ["html"],
+       "body":["#extend /master/$1","$0"],
+       "description":"Web Jsx Extend Master Template",
+       "scope":"text.html"
+    }
+ }
